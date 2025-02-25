@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        
+
+        <button id="themeSwitcher" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects-section">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Education">Educational Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        
+        <div class = "header">
+            
+            <img src="images.png" alt="image" width="200px" height="200">
+        <h1>Hi, I am Raisa!</h1>
+        
+            <p>Machine Learning | Web-development | IOT </p>
+        </div>
+    </header>
+   
+    
+        <section id="about">
+            <div id="container">
+                <h2>About Me</h2>
+                <p>I am an engineering student and I am passionate about web-development, AI, and IoT devices.  
+                   I love to learn new things about computer science.  
+                   My goal is to build efficient and modern applications which can benefit mass people.</p>
+            </div>
+        </section>
+
+        <div id="projects-section" class="projects-section">
+            <h2 id="h2Col">Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>1. Coffee Shop Management System</h3>
+                    <p>It is a simple project with a menu bar, pricing system, an admin panel, customer's view and some other simple functions that are needed.
+                        This project was made in C language and using file system.There was a splash screen for decoration purpose.
+                    </p>
+                    <button>View Details</button>
+                </div>
+        
+                <div class="project">
+                    <h3>2. Advising System</h3>
+                    <p>This project was built using Java as a programming language. In this project I made an advising window where one can add or drop courses. The added courses were saved into files.There is also a 
+                        system to check if two classes crashes or not.
+                    </p>
+                    <button>View Details</button>
+                </div>
+        
+                <div class="project">
+                    <h3>3. Our Version of Student Companion App</h3>
+                    <p>This was a group project made using Java. This project had many functions including a CGPA calculator, list of books, searching of book using course name, description of advised courses etc. There also a diary type option where student can write their daily activities.</p>
+                    <button>View Details</button>
+                </div>
+        
+                <div class="project">
+                    <h3>4. NotePad</h3>
+                    <p>This project has several functions such as delete operation (using key), adding tasks, modifying tasks, etc. Whenever a note is added, it automatically generates and adds the date with precise timing.This project was made using java as a programming language.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </div>
+        <section id="skills">
+            <h2 >Skills</h2>
+            <div class = skills-container>
+            <div class="skill">
+                <img src="download.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="cssLogo.jpg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="JSlogo.jpg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="bootstrapLogo.jpg" alt="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill">
+                <img src="cLogo.png" alt="C">
+                <p>C</p>
+            </div>
+            <div class="skill">
+                <img src="CppLogo.png" alt="C++">
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <img src="php2.png" alt="PHP">
+                <p>Php</p>
+            </div>
+            <div class = "skill">
+                <img src="javaLogo.jpg" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class = "skill">
+                <img src="sql2.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section id = "edu">
+        <div id="Education">
+            <h2>Education</h2>
+            <p>Currently studying at North South University in BSc. in CSE </p>
+            <p>Current CGPA : 3.64</p>
+            <p>GPA of last semester : 3.72</p>
+            <p>HSC-2021 (Science)</p>
+            <p>SSC-2019 (Science)</p>
+        </div>
+    </section>
+    <div id = "contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="Cname" name="name" required placeholder="Name...">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email...">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Message..." cols="35" rows="5"></textarea>
+            <form id="contactForm" action="submit_form" method="POST"></form>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   
+    
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+   
+    <script src="script.js"></script>
+</body>
+</html>
